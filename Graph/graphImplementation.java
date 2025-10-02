@@ -65,7 +65,6 @@ public class graphImplementation {
             }
         }
     }
-
     public static void DFS(ArrayList<Edge> graph[], int curr, boolean vis[]){
         System.out.print(curr+" ");
         vis[curr] = true;
@@ -96,7 +95,7 @@ public class graphImplementation {
         boolean vis[] = new boolean[V];
         for(int i=0; i<V; i++){
             if(vis[i] == false){
-                BFS(graph, V,vis,i);
+                DFS(graph, i,vis);
             }
         }
     }
